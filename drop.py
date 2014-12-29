@@ -6,11 +6,15 @@ UGraph = LoadEdgeList(PUNGraph, File, 0, 1, " ")
 Nodes = []
 Edges = []
 
-NIdToDistH = TIntH()
-shortestPaths = []
-
-UGraph.Dump()
-
 for NI in UGraph.Nodes():
-    shortestPaths.append(GetShortPath(UGraph, NI.GetId(), NIdToDistH))
-print shortestPaths
+    Node = {}
+    Node['name'] = NI.GetId()
+    Nodes.append(Node)
+
+    for i in range(NI.GetDeg()):
+        Edge = {}
+        Edge['source'] = NI.GetId()
+        Edge['target'] = NI.GetNbrNId(i)
+        Edges.append(Edge)
+
+Data = {'Nodes': Nodes, 'Edges': Edges}
