@@ -1,15 +1,10 @@
 from snap import *
 
-UGraph = PUNGraph.New()
-UGraph.AddNode(1)
-UGraph.AddNode(2)
-UGraph.AddNode(5)
-UGraph.AddNode(6)
+File = "data/facebook/698.edges"
+UGraph = LoadEdgeList(PUNGraph, File, 0, 1, " ")
 
-UGraph.AddEdge(1, 2)
-UGraph.AddEdge(1, 5)
-UGraph.AddEdge(1, 6)
-UGraph.AddEdge(2, 6)
+Nodes = []
+Edges = []
 
 NIdToDistH = TIntH()
 shortestPaths = []
