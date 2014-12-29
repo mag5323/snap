@@ -1,5 +1,6 @@
 from snap import *
 import json
+import sys
 
 def toJson(UGraph, Json):
     Nodes = []
@@ -26,4 +27,4 @@ def toJson(UGraph, Json):
 File = 'data/facebook/698.edges'
 UGraph = LoadEdgeList(PUNGraph, File, 0, 1, ' ')
 
-toJson(UGraph, 'result.json')
+toJson(UGraph, sys.argv[-1])
