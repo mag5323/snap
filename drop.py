@@ -1,4 +1,5 @@
 from snap import *
+import json
 
 File = "data/facebook/698.edges"
 UGraph = LoadEdgeList(PUNGraph, File, 0, 1, " ")
@@ -18,3 +19,6 @@ for NI in UGraph.Nodes():
         Edges.append(Edge)
 
 Data = {'Nodes': Nodes, 'Edges': Edges}
+
+with open('data.json', 'w') as outfile:
+    json.dump(Data, outfile, sort_keys=True, indent=4, separators=(',', ': '))
