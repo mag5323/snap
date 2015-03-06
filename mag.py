@@ -4,16 +4,16 @@ from operator import itemgetter
 
 G = TUNGraph.New()
 
-for N in range(1, 7):
+for N in range(0, 6):
     G.AddNode(N)
 
+G.AddEdge(0, 1)
+G.AddEdge(0, 2)
 G.AddEdge(1, 2)
 G.AddEdge(1, 3)
-G.AddEdge(2, 3)
 G.AddEdge(2, 4)
-G.AddEdge(3, 5)
+G.AddEdge(3, 4)
 G.AddEdge(4, 5)
-G.AddEdge(5, 6)
 
 Centr = []
 Neighbors = {}

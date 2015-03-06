@@ -1,5 +1,8 @@
 {
-  "Nodes": [
+  "nodes": [
+    {
+      "name": 0
+    }, 
     {
       "name": 1
     }, 
@@ -14,12 +17,17 @@
     }, 
     {
       "name": 5
-    }, 
-    {
-      "name": 6
     }
   ], 
-  "Edges": [
+  "links": [
+    {
+      "source": 0, 
+      "target": 1
+    }, 
+    {
+      "source": 0, 
+      "target": 2
+    }, 
     {
       "source": 1, 
       "target": 2
@@ -30,23 +38,15 @@
     }, 
     {
       "source": 2, 
-      "target": 3
-    }, 
-    {
-      "source": 2, 
       "target": 4
     }, 
     {
       "source": 3, 
-      "target": 5
+      "target": 4
     }, 
     {
       "source": 4, 
       "target": 5
-    }, 
-    {
-      "source": 5, 
-      "target": 6
     }
   ]
 }

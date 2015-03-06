@@ -1,11 +1,11 @@
 import json
 
 def toJson(G):
-    Dis = {'Edges': [], 'Nodes': []}
+    Dis = {'links': [], 'nodes': []}
     for N in G.Nodes():
-        Dis['Nodes'].append({'name': N.GetId()})
+        Dis['nodes'].append({'name': N.GetId()})
     for E in G.Edges():
-        Dis['Edges'].append({'source': E.GetSrcNId(), 'target': E.GetDstNId()})
+        Dis['links'].append({'source': E.GetSrcNId(), 'target': E.GetDstNId()})
     with open('output.json', 'w') as outfile:
         json.dump(Dis, outfile, indent = 2)
 
