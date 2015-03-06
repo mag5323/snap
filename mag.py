@@ -39,23 +39,3 @@ G.Dump()
 SubGraph.Dump()
 
 toJson(G)
-#print '\nBetweenness Centrality'
-#Nodes = TIntFltH()
-#Edges = TIntPrFltH()
-#GetBetweennessCentr(G, Nodes, Edges, 1.0)
-#for node in Nodes:
-#    print "node: %d centrality: %f" % (node, Nodes[node])
-#
-#print '\nCloseness Centrality'
-#for NI in G.Nodes():
-#    CloseCentr = GetClosenessCentr(G, NI.GetId())
-#    print "node: %d centrality: %f" % (NI.GetId(), CloseCentr)
-#
-#print '\nFarness Centrality'
-#for NI in G.Nodes():
-#    FarCentr = GetFarnessCentr(G, NI.GetId())
-#    print "node: %d centrality: %f" % (NI.GetId(), FarCentr)
-#
-#print '\nNode Centrality'
-#for NI in G.Nodes():
-#    print NI.GetId(), GetNodeEcc(G, NI.GetId(), False)
