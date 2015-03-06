@@ -1,3 +1,5 @@
+import json
+
 def toJson(G):
     Dis = {'Edges': [], 'Nodes': []}
     for N in G.Nodes():

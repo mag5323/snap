@@ -1,7 +1,6 @@
 from snap import *
 from func import *
 from operator import itemgetter
-import json
 
 G = TUNGraph.New()
 
@@ -39,6 +38,7 @@ SubGraph = GetSubGraph(G, NIdV)
 G.Dump()
 SubGraph.Dump()
 
+toJson(G)
 #print '\nBetweenness Centrality'
 #Nodes = TIntFltH()
 #Edges = TIntPrFltH()
