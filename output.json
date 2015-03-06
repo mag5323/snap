@@ -7,15 +7,19 @@
       "name": 1
     }, 
     {
+      "group": 1, 
       "name": 2
     }, 
     {
+      "group": 1, 
       "name": 3
     }, 
     {
+      "group": 1, 
       "name": 4
     }, 
     {
+      "group": 1, 
       "name": 5
     }
   ], 

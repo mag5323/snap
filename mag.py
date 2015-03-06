@@ -35,7 +35,5 @@ for N in Neighbors[Max]:
     NIdV.Add(N)
 
 SubGraph = GetSubGraph(G, NIdV)
-G.Dump()
-SubGraph.Dump()
 
-toJson(G)
+toJson(toObj(G, SubGraph, 1))
